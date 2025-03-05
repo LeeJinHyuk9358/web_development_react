@@ -5,7 +5,8 @@
 // let greeting = "Hello " + person.firstName + " " + person.lastName;
 // console.log(greeting);
 
-// // greeting2를 템플릿 리터럴을 적용하여 작성하고 console창에 띄우시오
+// // greeting2를 템플릿 리터럴을 적용하여 작성하고 console창에 띄우시오.
+// // 백틱 사용하셔야 합니다
 // let greeting2 = `Hello ${person.firstName} ${person.lastName}`;
 // console.log(greeting2);
 
@@ -16,8 +17,8 @@
 // const person2 = {
 //   firstName: 'Jane',
 //   lastName: 'Cooper',
-//   email: 'j.cooper@mail.com',
-// }
+//   email: 'j.cooper@mail.com'
+// };
 
 // const firstName1 = person.firstName;
 // const lastName1 = person.lastName;
@@ -25,7 +26,7 @@
 
 // // 이상의 번거로운 코드를 구조 분해하는 방법은 다음과 같습니다.
 
-// const { firstName, lastName, email} = person2;
+// const { firstName, lastName, email } = person2;
 
 // console.log(firstName);
 // console.log(lastName);
