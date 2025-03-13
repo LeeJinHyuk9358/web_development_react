@@ -1,8 +1,8 @@
-import Button from "@mui/material/Button";
+import Button from '@mui/material/Button';
 
 function ClickButton() {
-  return(
-    <Button variant="contained" color="primary">
+  return (
+    <Button variant="contained" color="secondary">
       클릭하세요
     </Button>
   );

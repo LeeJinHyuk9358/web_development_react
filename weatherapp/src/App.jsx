@@ -10,7 +10,7 @@ function App() {
   });
 
   useEffect(() => {
-    fetch('https://api.openweathermap.org/data/2.5/weather?q=Seoul&units=Metric&APIkey=f09cd788aae0e6db2ebb75b5c83770ee')
+    fetch('https://api.openweathermap.org/data/2.5/weather?q=Seoul&units=Metric&APIkey=08315439ef75a9358a09e997111e70c9')
     .then(response => response.json())
     .then(result => {
       setWeather({

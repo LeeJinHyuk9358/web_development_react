@@ -4,7 +4,7 @@ import Typography from "@mui/material/Typography";
 
 export default function MyCard() {
   return(
-    <Card sx={{
+    <Card sx={{ 
       maxWidth: 300,
       padding: 2,
       }}>
@@ -18,5 +18,6 @@ export default function MyCard() {
         </Typography>
       </CardContent>
     </Card>
+
   );
 }
