@@ -1,19 +1,17 @@
-// import Header from "./components/Header";
-// import 이미지변수명 from "경로";
+import { CORE_CONCEPTS } from "./data";
 import Header2 from "./components/Header/Header2";
-
-function CoreConcepts(props) {
-  return(
-    <li>
-      <img src={props.image} alt={props.title} />
-      <h3>{props.title}</h3>
-      <p>{props.description}</p>
-    </li>
-  );
-}
-
+import CoreConcepts from "./components/CoreConcepts/CoreConcepts";
+import TabButton from "./components/TabButton";
 
 function App() {
+
+  const [ selectedTopic, seleSeleTopic] = UseState('');
+
+  function handleSelect(selectedTopic) {
+    //  selectedButton = 'components', 'jsx', 'props', 'state'
+    
+  }
+
   return (
     <div>
       <Header2 />
@@ -21,8 +19,24 @@ function App() {
         <section id="core-concepts">
           <h2>핵심 개념들 of React</h2>
           <ul>
-            <CoreConcepts image={} title={} description={} />
+            <CoreConcepts 
+              image={CORE_CONCEPTS[0].image} 
+              title={CORE_CONCEPTS[0].title} 
+              description={CORE_CONCEPTS[0].description} />
+            <CoreConcepts {...CORE_CONCEPTS[1]}/>
+            <CoreConcepts {...CORE_CONCEPTS[2]}/>
+            <CoreConcepts {...CORE_CONCEPTS[3]}/>
           </ul>
+        </section>
+        <section id="examples">
+          <h2>예시들</h2>
+          <menu>
+            <TabButton onSelect={handleSelect('굿나잇')}>Components</TabButton>
+            <TabButton>JSX</TabButton>
+            <TabButton>Props</TabButton>
+            <TabButton>State</TabButton>
+          </menu>
+          동적인 버튼 클릭의 결과물
         </section>
       </main>
     </div>
